@@ -18,7 +18,8 @@ class web:
       if line.startswith('okres'):
         start_index = i
         break
-    distance_to_counts = pocet_okresu * 2
+    #distance_to_counts = pocet_okresu * 2
+    distance_to_counts = pocet_okresu + 1
     if start_index and distance_to_counts:
       for i in range(start_index, start_index + pocet_okresu):
         name = lines[i].strip().replace('okres ', '')
